@@ -1,10 +1,10 @@
 # Interface em Python para o [API do Portal da Transparência](https://www.portaltransparencia.gov.br/api-de-dados)
 
-O `transpyrantportal` é um módulo que faz interface com o API do portal 
+O `portaldatransparencia` é um módulo que faz interface com o API do portal 
 da transparência do governo federal. 
 
 # Documentação
-O `transpyrantportal` foi desenvolvido na imagem e semelhança do próprio API do portal, 
+O `portaldatransparencia` foi desenvolvido na imagem e semelhança do próprio API do portal, 
 então seguindo as indicações da [documentação original](http://api.portaldatransparencia.gov.br/) 
 já dá uma ideia de como usar esse módulo. Porém o próprio módulo tem a documentação da página. 
 Ainda assim, aqui tem alguns exemplos para ficar mais claro.
@@ -12,10 +12,10 @@ Ainda assim, aqui tem alguns exemplos para ficar mais claro.
 # Como usar
 Primeiro, é necessário [cadastrar uma conta `gov.br`](http://portaldatransparencia.gov.br/api-de-dados/cadastrar-email) 
 e gerar um token pessoal. Lembrando que para gerar o token é necessário que a conta tenha 2FA configurado. 
-Depois, basta importar o `PortalDaTransparencia` do `transpyrantportal` e criar os objetos que vão solicitar os dados do API:
+Depois, basta importar o `PortalDaTransparencia` do `portaldatransparencia` e criar os objetos que vão solicitar os dados do API:
 
 ```python
-from transpyrantportal import PortalDaTransparencia
+from portaldatransparencia import PortalDaTransparencia
 token = '<seu token>'
 portal = PortalDaTransparencia(token)
 
@@ -30,7 +30,7 @@ O `PortalDaTransparencia` nada mais é que um aglomerado de outros portais, como
 Também é possível importar somente o portal de interesse:
 
 ```python
-from transpyrantportal import DespesasPublicas
+from portaldatransparencia import DespesasPublicas
 token = '<seu token>'
 portal = DespesasPublicas(token)
 

@@ -63,9 +63,9 @@ print(result)
 
 # Disclaimer
 
-A maior parte do código escrito no `transpyrantportal` foi gerado automaticamente 
+A maior parte do código escrito no `portaldatransparencia` foi gerado automaticamente 
 através de webscraping da página de documentação (`scraping.py`)
 
 # Licença
 
-O `transpyrantportal` está licensiado sobre a licença do MIT.
+O `portaldatransparencia` está licensiado sobre a licença do MIT.

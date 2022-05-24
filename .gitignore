@@ -122,3 +122,8 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Swagger
+codegen-api/
+swagger-cli.jar
+portal-openapi.json

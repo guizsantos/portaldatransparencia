@@ -66,6 +66,22 @@ print(result)
 A maior parte do código escrito no `portaldatransparencia` foi gerado automaticamente 
 através de webscraping da página de documentação (`scraping.py`)
 
+# Alteranativa: gerando cliente através da especificação OpenAPI
+[Arquivo JSON OpenAPI](https://api.portaldatransparencia.gov.br/v2/api-docs):
+```bash
+curl https://api.portaldatransparencia.gov.br/v2/api-docs --output portal-openapi.json
+```
+
+Swagger Codegen:
+```bash
+curl https://repo1.maven.org/maven2/io/swagger/codegen/v3/swagger-codegen-cli/3.0.34/swagger-codegen-cli-3.0.34.jar --output swagger-cli.jar
+```
+
+Generate:
+```bash
+java -jar swagger-cli.jar -i portal-openapi.jsoon -l python -o codegen-api
+```
+
 # Licença
 
 O `portaldatransparencia` está licensiado sobre a licença do MIT.
